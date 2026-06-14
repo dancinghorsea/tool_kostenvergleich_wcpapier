@@ -1,0 +1,42 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "main main img img"
+        "footer footer footer footer";
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    grid-area: header;
+    background-color:rgb(207, 139, 90);
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main {
+    grid-area: main;
+    background-color: lightgray;
+    display: flex;
+    gap: 30px;
+}
+
+.inhalt {
+    flex: 1;
+}
+
+img {
+    grid-area: img;
+    width: 400px;
+    height: 480px;
+    border-radius: 30px;
+}   
+
+footer {
+    grid-area: footer;
+    background-color:r;
+    padding: 20px;
+}

@@ -1,0 +1,262 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 900" width="500" height="900" font-family="'Segoe UI', Arial, sans-serif">
+
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EAF6FF"/>
+      <stop offset="100%" style="stop-color:#FFF0F8"/>
+    </linearGradient>
+    <linearGradient id="shelfGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A96A"/>
+      <stop offset="100%" style="stop-color:#A0723A"/>
+    </linearGradient>
+    <linearGradient id="tp1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B9D"/>
+      <stop offset="100%" style="stop-color:#CC3F72"/>
+    </linearGradient>
+    <linearGradient id="tp2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9B59B6"/>
+      <stop offset="100%" style="stop-color:#6C3483"/>
+    </linearGradient>
+    <linearGradient id="hr1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC71"/>
+      <stop offset="100%" style="stop-color:#1A8A4A"/>
+    </linearGradient>
+    <linearGradient id="hr2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F39C12"/>
+      <stop offset="100%" style="stop-color:#B7770D"/>
+    </linearGradient>
+    <linearGradient id="tu1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3498DB"/>
+      <stop offset="100%" style="stop-color:#1A5A8A"/>
+    </linearGradient>
+    <linearGradient id="tu2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E74C3C"/>
+      <stop offset="100%" style="stop-color:#922B21"/>
+    </linearGradient>
+    <filter id="sh">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#00000028"/>
+    </filter>
+    <filter id="psh">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#00000040"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="900" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="30"  cy="80"  r="50" fill="#FF6B9D" opacity="0.06"/>
+  <circle cx="470" cy="200" r="60" fill="#9B59B6" opacity="0.06"/>
+  <circle cx="50"  cy="480" r="45" fill="#2ECC71" opacity="0.06"/>
+  <circle cx="460" cy="600" r="55" fill="#F39C12" opacity="0.06"/>
+  <circle cx="30"  cy="820" r="50" fill="#3498DB" opacity="0.06"/>
+  <circle cx="470" cy="850" r="40" fill="#E74C3C" opacity="0.06"/>
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- SECTION 1: TOILETTENPAPIER            -->
+  <!-- ══════════════════════════════════════ -->
+
+  <!-- Section header -->
+  <rect x="20" y="16" width="460" height="36" rx="18" fill="#FF6B9D" opacity="0.18"/>
+  <text x="250" y="40" text-anchor="middle" font-size="16" font-weight="800" fill="#CC3F72">🧻 Toilettenpapier</text>
+
+  <!-- Shelf board -->
+  <rect x="20" y="272" width="460" height="13" rx="4" fill="url(#shelfGrad)" filter="url(#sh)"/>
+
+  <!-- === TP Packung A (pink) === -->
+  <g transform="translate(40, 65)" filter="url(#sh)">
+    <!-- Pack body -->
+    <rect x="0" y="35" width="170" height="185" rx="12" fill="url(#tp1)"/>
+    <!-- Sheen wave -->
+    <path d="M0,90 Q42,68 85,90 Q128,112 170,90 L170,130 Q128,152 85,130 Q42,108 0,130Z" fill="white" opacity="0.12"/>
+    <!-- 2 rolls on top -->
+    <ellipse cx="43" cy="44" rx="38" ry="18" fill="#F0EEE8" stroke="#DDD" stroke-width="1"/>
+    <ellipse cx="43" cy="34" rx="38" ry="18" fill="#FAFAF8" stroke="#DDD" stroke-width="1.5"/>
+    <ellipse cx="43" cy="34" rx="16" ry="8" fill="#E2DED6"/>
+    <ellipse cx="127" cy="44" rx="38" ry="18" fill="#F0EEE8" stroke="#DDD" stroke-width="1"/>
+    <ellipse cx="127" cy="34" rx="38" ry="18" fill="#FAFAF8" stroke="#DDD" stroke-width="1.5"/>
+    <ellipse cx="127" cy="34" rx="16" ry="8" fill="#E2DED6"/>
+    <!-- Label text -->
+    <text x="85" y="138" text-anchor="middle" font-size="19" font-weight="800" fill="white" letter-spacing="1">Packung A</text>
+    <text x="85" y="160" text-anchor="middle" font-size="12" fill="white" opacity="0.88">4 Rollen · 4-lagig</text>
+    <!-- Price bubble -->
+    <g transform="translate(95, 183)">
+      <circle cx="28" cy="22" r="32" fill="#FFD700" filter="url(#psh)"/>
+      <circle cx="28" cy="22" r="27" fill="#FFC200" stroke="#FFD700" stroke-width="2"/>
+      <text x="28" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">nur</text>
+      <text x="28" y="30" text-anchor="middle" font-size="17" font-weight="900" fill="#5A3000">2,49</text>
+      <text x="28" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">€</text>
+    </g>
+  </g>
+
+  <!-- === TP Packung B (purple) === -->
+  <g transform="translate(250, 65)" filter="url(#sh)">
+    <rect x="0" y="25" width="210" height="195" rx="12" fill="url(#tp2)"/>
+    <path d="M0,90 Q52,68 105,90 Q158,112 210,90 L210,130 Q158,152 105,130 Q52,108 0,130Z" fill="white" opacity="0.10"/>
+    <!-- 3 rolls on top -->
+    <ellipse cx="35"  cy="36" rx="30" ry="14" fill="#F0EEE8" stroke="#CCC" stroke-width="1"/>
+    <ellipse cx="35"  cy="26" rx="30" ry="14" fill="#FAFAF8" stroke="#CCC" stroke-width="1.5"/>
+    <ellipse cx="35"  cy="26" rx="12" ry="5.5" fill="#DDD"/>
+    <ellipse cx="105" cy="36" rx="30" ry="14" fill="#F0EEE8" stroke="#CCC" stroke-width="1"/>
+    <ellipse cx="105" cy="26" rx="30" ry="14" fill="#FAFAF8" stroke="#CCC" stroke-width="1.5"/>
+    <ellipse cx="105" cy="26" rx="12" ry="5.5" fill="#DDD"/>
+    <ellipse cx="175" cy="36" rx="30" ry="14" fill="#F0EEE8" stroke="#CCC" stroke-width="1"/>
+    <ellipse cx="175" cy="26" rx="30" ry="14" fill="#FAFAF8" stroke="#CCC" stroke-width="1.5"/>
+    <ellipse cx="175" cy="26" rx="12" ry="5.5" fill="#DDD"/>
+    <!-- Label -->
+    <text x="105" y="135" text-anchor="middle" font-size="19" font-weight="800" fill="white" letter-spacing="1">Packung B</text>
+    <text x="105" y="157" text-anchor="middle" font-size="12" fill="white" opacity="0.88">9 Rollen · 3-lagig</text>
+    <!-- Price bubble -->
+    <g transform="translate(118, 170)">
+      <circle cx="28" cy="22" r="32" fill="#FFD700" filter="url(#psh)"/>
+      <circle cx="28" cy="22" r="27" fill="#FFC200" stroke="#FFD700" stroke-width="2"/>
+      <text x="28" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">nur</text>
+      <text x="28" y="30" text-anchor="middle" font-size="17" font-weight="900" fill="#5A3000">5,99</text>
+      <text x="28" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">€</text>
+    </g>
+  </g>
+
+  <!-- Name labels below shelf -->
+  <text x="125" y="300" text-anchor="middle" font-size="13" font-weight="700" fill="#CC3F72">Packung A</text>
+  <text x="125" y="315" text-anchor="middle" font-size="11" fill="#888">4 Rollen · 2,49 €</text>
+  <text x="355" y="300" text-anchor="middle" font-size="13" font-weight="700" fill="#8E44AD">Packung B</text>
+  <text x="355" y="315" text-anchor="middle" font-size="11" fill="#888">9 Rollen · 5,99 €</text>
+
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- SECTION 2: HAUSHALTSROLLEN            -->
+  <!-- ══════════════════════════════════════ -->
+
+  <rect x="20" y="336" width="460" height="36" rx="18" fill="#2ECC71" opacity="0.18"/>
+  <text x="250" y="360" text-anchor="middle" font-size="16" font-weight="800" fill="#1A8A4A">🍃 Haushaltsrollen</text>
+
+  <!-- Shelf board -->
+  <rect x="20" y="580" width="460" height="13" rx="4" fill="url(#shelfGrad)" filter="url(#sh)"/>
+
+  <!-- === HR Packung A (green) === -->
+  <g transform="translate(55, 375)" filter="url(#sh)">
+    <!-- Tall single roll with wrapper -->
+    <rect x="12" y="70" width="110" height="130" rx="8" fill="url(#hr1)"/>
+    <ellipse cx="67" cy="70"  rx="55" ry="22" fill="#D5F5E3" stroke="#27AE60" stroke-width="1.5"/>
+    <ellipse cx="67" cy="70"  rx="22" ry="9"  fill="#A9DFBF"/>
+    <ellipse cx="67" cy="200" rx="55" ry="20" fill="#A9DFBF" stroke="#1A8A4A" stroke-width="1"/>
+    <!-- Stripe -->
+    <rect x="12" y="118" width="110" height="26" fill="white" opacity="0.18"/>
+    <text x="67" y="108" text-anchor="middle" font-size="14" font-weight="800" fill="white">Packung A</text>
+    <text x="67" y="124" text-anchor="middle" font-size="10" fill="white" opacity="0.9">XXL · 1 Rolle · 2-lagig</text>
+    <text x="67" y="160" text-anchor="middle" font-size="28">🌿</text>
+    <!-- Price -->
+    <g transform="translate(72, 188)">
+      <circle cx="28" cy="22" r="32" fill="#FFD700" filter="url(#psh)"/>
+      <circle cx="28" cy="22" r="27" fill="#FFC200" stroke="#FFD700" stroke-width="2"/>
+      <text x="28" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">nur</text>
+      <text x="28" y="30" text-anchor="middle" font-size="17" font-weight="900" fill="#5A3000">1,79</text>
+      <text x="28" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">€</text>
+    </g>
+  </g>
+
+  <!-- === HR Packung B (orange) === -->
+  <g transform="translate(255, 378)" filter="url(#sh)">
+    <rect x="0" y="35" width="205" height="175" rx="12" fill="url(#hr2)"/>
+    <path d="M0,95 Q51,73 102,95 Q153,117 205,95 L205,135 Q153,157 102,135 Q51,113 0,135Z" fill="white" opacity="0.10"/>
+    <!-- 3 rolls on top -->
+    <ellipse cx="34"  cy="48" rx="30" ry="17" fill="#FEF5E7" stroke="#CCC" stroke-width="1"/>
+    <ellipse cx="34"  cy="36" rx="30" ry="17" fill="#FEFAF4" stroke="#CCC" stroke-width="1.5"/>
+    <ellipse cx="34"  cy="36" rx="12" ry="6.5" fill="#F0E0C0"/>
+    <ellipse cx="102" cy="48" rx="30" ry="17" fill="#FEF5E7" stroke="#CCC" stroke-width="1"/>
+    <ellipse cx="102" cy="36" rx="30" ry="17" fill="#FEFAF4" stroke="#CCC" stroke-width="1.5"/>
+    <ellipse cx="102" cy="36" rx="12" ry="6.5" fill="#F0E0C0"/>
+    <ellipse cx="170" cy="48" rx="30" ry="17" fill="#FEF5E7" stroke="#CCC" stroke-width="1"/>
+    <ellipse cx="170" cy="36" rx="30" ry="17" fill="#FEFAF4" stroke="#CCC" stroke-width="1.5"/>
+    <ellipse cx="170" cy="36" rx="12" ry="6.5" fill="#F0E0C0"/>
+    <!-- Label -->
+    <text x="102" y="128" text-anchor="middle" font-size="19" font-weight="800" fill="white">Packung B</text>
+    <text x="102" y="148" text-anchor="middle" font-size="12" fill="white" opacity="0.88">3 Rollen · extra saugstark</text>
+    <!-- Price -->
+    <g transform="translate(116, 162)">
+      <circle cx="28" cy="22" r="32" fill="#FFD700" filter="url(#psh)"/>
+      <circle cx="28" cy="22" r="27" fill="#FFC200" stroke="#FFD700" stroke-width="2"/>
+      <text x="28" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">nur</text>
+      <text x="28" y="30" text-anchor="middle" font-size="17" font-weight="900" fill="#5A3000">3,49</text>
+      <text x="28" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">€</text>
+    </g>
+  </g>
+
+  <!-- Name labels -->
+  <text x="120" y="608" text-anchor="middle" font-size="13" font-weight="700" fill="#1A8A4A">Packung A</text>
+  <text x="120" y="623" text-anchor="middle" font-size="11" fill="#888">1 Rolle XXL · 1,79 €</text>
+  <text x="358" y="608" text-anchor="middle" font-size="13" font-weight="700" fill="#D35400">Packung B</text>
+  <text x="358" y="623" text-anchor="middle" font-size="11" fill="#888">3 Rollen · 3,49 €</text>
+
+
+  <!-- ══════════════════════════════════════ -->
+  <!-- SECTION 3: TASCHENTÜCHER              -->
+  <!-- ══════════════════════════════════════ -->
+
+  <rect x="20" y="644" width="460" height="36" rx="18" fill="#3498DB" opacity="0.18"/>
+  <text x="250" y="668" text-anchor="middle" font-size="16" font-weight="800" fill="#1A5A8A">💨 Taschentücher</text>
+
+  <!-- Shelf board -->
+  <rect x="20" y="870" width="460" height="13" rx="4" fill="url(#shelfGrad)" filter="url(#sh)"/>
+
+  <!-- === Taschentücher Packung A (blue box) === -->
+  <g transform="translate(48, 682)" filter="url(#sh)">
+    <!-- Box body -->
+    <rect x="0" y="42" width="165" height="100" rx="10" fill="url(#tu1)"/>
+    <!-- Top lid -->
+    <ellipse cx="82" cy="42" rx="82" ry="24" fill="#5DADE2"/>
+    <!-- Opening -->
+    <ellipse cx="82" cy="42" rx="36" ry="13" fill="#2980B9"/>
+    <!-- Tissue -->
+    <path d="M56,42 Q82,18 108,42" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+    <path d="M58,40 Q82,17 106,40" fill="white" opacity="0.8"/>
+    <!-- Decorations -->
+    <circle cx="28"  cy="88" r="16" fill="white" opacity="0.12"/>
+    <text x="28"  y="94" text-anchor="middle" font-size="18">🌸</text>
+    <circle cx="137" cy="88" r="16" fill="white" opacity="0.12"/>
+    <text x="137" y="94" text-anchor="middle" font-size="18">🌸</text>
+    <!-- Label -->
+    <text x="82" y="82" text-anchor="middle" font-size="15" font-weight="800" fill="white">Packung A</text>
+    <text x="82" y="98" text-anchor="middle" font-size="11" fill="white" opacity="0.9">Box · 80 Tücher · 3-lagig</text>
+    <text x="82" y="115" text-anchor="middle" font-size="11" fill="white" opacity="0.8">Aloe Vera</text>
+    <!-- Price -->
+    <g transform="translate(98, 120)">
+      <circle cx="28" cy="22" r="32" fill="#FFD700" filter="url(#psh)"/>
+      <circle cx="28" cy="22" r="27" fill="#FFC200" stroke="#FFD700" stroke-width="2"/>
+      <text x="28" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">nur</text>
+      <text x="28" y="30" text-anchor="middle" font-size="17" font-weight="900" fill="#5A3000">1,29</text>
+      <text x="28" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">€</text>
+    </g>
+  </g>
+
+  <!-- === Taschentücher Packung B (red mini packs) === -->
+  <g transform="translate(268, 698)" filter="url(#sh)">
+    <!-- Stack effect -->
+    <rect x="8"  y="16" width="190" height="65" rx="8" fill="#C0392B" opacity="0.6"/>
+    <rect x="4"  y="9"  width="190" height="65" rx="8" fill="#D9534F" opacity="0.8"/>
+    <!-- Front pack -->
+    <rect x="0"  y="0"  width="190" height="68" rx="8" fill="url(#tu2)"/>
+    <!-- Stripe -->
+    <rect x="0" y="22" width="190" height="24" rx="0" fill="white" opacity="0.15"/>
+    <!-- Label -->
+    <text x="95" y="17" text-anchor="middle" font-size="13" font-weight="800" fill="white">Packung B</text>
+    <text x="95" y="32" text-anchor="middle" font-size="11" fill="white" opacity="0.9">Mini-Packs · je 10 Tücher</text>
+    <text x="95" y="46" text-anchor="middle" font-size="11" fill="white" opacity="0.85">10er Vorteilspack</text>
+    <text x="95" y="61" text-anchor="middle" font-size="10" fill="white" opacity="0.75">= 100 Tücher gesamt</text>
+    <!-- Price -->
+    <g transform="translate(108, 68)">
+      <circle cx="28" cy="22" r="32" fill="#FFD700" filter="url(#psh)"/>
+      <circle cx="28" cy="22" r="27" fill="#FFC200" stroke="#FFD700" stroke-width="2"/>
+      <text x="28" y="16" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">nur</text>
+      <text x="28" y="30" text-anchor="middle" font-size="17" font-weight="900" fill="#5A3000">3,99</text>
+      <text x="28" y="42" text-anchor="middle" font-size="10" font-weight="700" fill="#5A3000">€</text>
+    </g>
+  </g>
+
+  <!-- Name labels -->
+  <text x="130" y="876" text-anchor="middle" font-size="13" font-weight="700" fill="#1A5A8A">Packung A</text>
+  <text x="130" y="891" text-anchor="middle" font-size="11" fill="#888">80 Tücher · 1,29 €</text>
+  <text x="370" y="876" text-anchor="middle" font-size="13" font-weight="700" fill="#922B21">Packung B</text>
+  <text x="370" y="891" text-anchor="middle" font-size="11" fill="#888">100 Tücher · 3,99 €</text>
+
+</svg>
