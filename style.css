@@ -22,6 +22,7 @@ main {
     background-color: lightgray;
     display: flex;
     gap: 30px;
+    padding: 40px;
 }
 
 .inhalt {
@@ -39,4 +40,20 @@ footer {
     grid-area: footer;
     background-color:r;
     padding: 20px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+input {
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    background-color: antiquewhite;
+}
+
+button {
+    font-size: large;
+    font-weight:500;
+    background-color: antiquewhite;
 }

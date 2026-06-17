@@ -13,7 +13,7 @@
     
     <main>
         <div class="inhalt">
-            <p>Willkommen zum Tool Kostenvergleich WC-Papier!</p>
+            <h2><strong>Willkommen zu meinem kostenlosen Online-Vergleichsrechner!</strong></h2>
             <p>Hier können Sie die Kosten verschiedener WC-Papierprodukte vergleichen, um zu sparen.</p>
             <p>Natürlich können Sie auch andere Produkte vergleichen, z. B. Haushaltsrollen oder Taschentücher. </p>
             <p>Bitte geben Sie den Preis im Format Euro.Cent an (z. B.: 3.49).</p>
@@ -27,16 +27,14 @@
             <input type="number" id="blattanzahlA" placeholder="Anzahl Blatt pro Rolle A">
             <input type="number" id="blattanzahlB" placeholder="Anzahl Blatt pro Rolle B">
             <br>
-            <p>Sie haben nun den Preis pro Blatt oder pro Taschentuch erhalten. <br>
-            Welche Packung ist nun günstiger?</p>
-            <button id="vergleichen">Günstigere Packung</button>
-            <p>Wie viel sparen Sie im Vergleich zur anderen Packung?</p>
-            <button id="sparen">Ersparnis</button>
+            <p>Bitte auf den folgenden Button drücken, um das Ergebnis zu sehen:</p>
+            <button onclick="vergleichen()">Günstigere Packung</button>
+            <p id="ergebnis"></p>
         </div>
         <img src="images/produkte-hochformat.svg" alt="Bild zur Veranschaulichung des Kostenvergleichs von WC-Papier">
     </main>
     <footer>
-        <p>&copy; 2026 Christine van Eeeckhoutte. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2026 Christine van Eeckhoutte. Alle Rechte vorbehalten.</p>
         <div class="footer-links">
             <a href="datenschutz.html">Datenschutz</a>
             <a href="impressum.html">Impressum</a>
