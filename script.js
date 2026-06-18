@@ -12,6 +12,9 @@ function vergleichen () {
     const anzahlBlattGesamtB = anzahlRollenB * blattanzahlB
     const kostenProBlattB = preisPackungB / anzahlBlattGesamtB
 
+    const kostenProBlattACent = kostenProBlattA * 100;
+    const kostenProBlattBCent = kostenProBlattB * 100;
+
     let fazit = "";
     if (kostenProBlattA < kostenProBlattB) {
         fazit = "<strong>Fazit: Packung A ist günstiger!</strong>";
@@ -21,14 +24,14 @@ function vergleichen () {
     }
 
     let ersparnis = "";
-    if (kostenProBlattA < kostenProBlattB) {
-        ersparnis = kostenProBlattB - kostenProBlattA;
+    if (kostenProBlattACent < kostenProBlattBCent) {
+        ersparnis = kostenProBlattBCent - kostenProBlattACent;
     }
     else {
-        ersparnis = kostenProBlattA - kostenProBlattB
+        ersparnis = kostenProBlattACent - kostenProBlattBCent
     }
     
-    document.getElementById("ergebnis").innerHTML = "Packung A kostet " + kostenProBlattA.toFixed(4) + " € pro Blatt.<br>" + "Packung B kostet " + kostenProBlattB.toFixed(4) + " € pro Blatt.<br><br>" + fazit + "<br><br>" + "Ersparnis pro Blatt: " + ersparnis.toFixed(4) + " €";
+    document.getElementById("ergebnis").innerHTML = "Packung A kostet " + kostenProBlattACent.toFixed(2) + " Cent pro Blatt.<br>" + "Packung B kostet " + kostenProBlattBCent.toFixed(2) + " Cent pro Blatt.<br><br>" + fazit + "<br><br>" + "Ersparnis pro Blatt: " + ersparnis.toFixed(2) + " Cent";
 
     
 }
