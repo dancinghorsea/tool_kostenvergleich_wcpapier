@@ -42,3 +42,4 @@ function menuOeffnen() {
     .classList
     .toggle("sichtbar");
 }
+
