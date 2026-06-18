@@ -61,3 +61,44 @@ button {
 .Datenschutz {
     display: block;
 }
+
+.menu {
+    display: none;
+}
+
+.menu.sichtbar {
+    display: block;
+}
+
+.menu-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover {
+    background-color: rgb(230, 220, 200);
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

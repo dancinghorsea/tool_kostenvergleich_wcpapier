@@ -14,7 +14,7 @@ function vergleichen () {
 
     let fazit = "";
     if (kostenProBlattA < kostenProBlattB) {
-        fazit = "<strong>Fazit: Packung A ist günstiger!</storng>";
+        fazit = "<strong>Fazit: Packung A ist günstiger!</strong>";
     }   
     else {
         fazit = "<strong>Fazit: Packung B ist günstiger!</strong>";
@@ -33,4 +33,9 @@ function vergleichen () {
     
 }
 
-
+function menuOeffnen() {
+    document
+    .getElementById("menu")
+    .classList
+    .toggle("sichtbar");
+}
