@@ -15,6 +15,7 @@ header {
     padding: 20px;
     text-align: center;
     font-weight: bold;
+    margin-right: 110px;
 }
 
 main {
@@ -80,6 +81,7 @@ button {
 nav {
     background-color: antiquewhite;
     padding: 10px;
+    text-align: left;
 }
 
 .menu a {
