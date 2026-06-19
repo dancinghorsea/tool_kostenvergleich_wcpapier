@@ -16,6 +16,8 @@ header {
     text-align: center;
     font-weight: bold;
     margin-right: 110px;
+    border-radius: 100px 0px 100px 0px;
+    overflow: hidden;
 }
 
 main {
@@ -129,4 +131,11 @@ header,
 main,
 footer {
     box-sizing: border-box;
+}
+
+body.einfach {
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
