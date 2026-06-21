@@ -37,6 +37,7 @@ img {
     width: 400px;
     height: 480px;
     border-radius: 30px;
+    box-shadow: 0 20px 40px;
 }   
 
 footer {
@@ -53,12 +54,14 @@ input {
     padding-bottom: 10px;
     margin-bottom: 15px;
     background-color: antiquewhite;
+    box-shadow: 0 4px 8px;
 }
 
 button {
     font-size: large;
     font-weight:500;
     background-color: antiquewhite;
+    box-shadow: 0 20px 40px;
 }
 
 .Datenschutz {
